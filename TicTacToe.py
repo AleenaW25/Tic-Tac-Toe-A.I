@@ -14,7 +14,6 @@ def printBoard(board):
     print(board[3] + " | " + board[4] + " | " + board[5])
     print("---------")
     print(board[6] + " | " + board[7] + " | " + board[8])
-printBoard(board)
 
 
 #Take player input
@@ -65,7 +64,6 @@ def checkDiag(board):
 def checkTie(board):
     global gameRunning
     if "-" not in board: #If there are no spaces left in the board
-        printBoard(board)
         print("It is a tie!")
         gameRunning = False
         
@@ -102,3 +100,4 @@ while gameRunning:
     computer(board)
     checkWin()
     checkTie(board)
+
